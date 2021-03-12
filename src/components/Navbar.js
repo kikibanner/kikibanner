@@ -6,7 +6,7 @@ function Navbar() {
             <div className="main-nav ">
                 <ul className="nav vh-100 d-flex justify-content-center">
                     <li className="listbar"><a className="linkbar" href="#about"><code className="code">1.</code> About</a></li>
-                    <li className="listbar"><a className="linkbar" href="#projectss"><code className="code">2.</code> Works</a></li>
+                    <li className="listbar"><a className="linkbar" href="#projects"><code className="code">2.</code> Works</a></li>
                     <li className="listbar"><a className="linkbar" href="#contact"><code className="code">3.</code> Contact</a></li>
                 </ul>
             </div>
