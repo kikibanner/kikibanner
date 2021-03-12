@@ -1,13 +1,197 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.App {
+  font-family: 'Poppins';
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-moz-selection { /* Code for Firefox */
+  color: #006E76;
+  background: white;
+}
+
+::selection {
+  color: #006E76;
+  background: white;
+}
+
+.aaa {
+  color: #00FFFF;
+}
+
+.main {
+  color: white;
+}
+
+.sub {
+  color: #CFF2F1;
+}
+
+.highlight {
+  color: #00FFFF;
+}
+
+.hero {
+  background: linear-gradient(300deg, #09263f, #154a64, #155f64, #105d5f, #09263f);
+  background-size: 1000% 1000%;
+  vertical-align: middle;
+
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  -o-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:4% 0%}
+  50%{background-position:97% 100%}
+  100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:4% 0%}
+  50%{background-position:97% 100%}
+  100%{background-position:4% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:4% 0%}
+  50%{background-position:97% 100%}
+  100%{background-position:4% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:4% 0%}
+  50%{background-position:97% 100%}
+  100%{background-position:4% 0%}
+}
+
+
+@supports (font-variation-settings: "wght" 700) {
+  .txt-hero-main {
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+
+.txt-hero-hi {
+  font-size: 16px;
+}
+
+.hero-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.rest {
+  background-color: #0A1E2F;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+
+@supports (font-variation-settings: "wght" 700) {
+  .section-title {
+    font-size: 32px;
+    font-weight: 700; 
+  }
+  
+  .code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00FFFF;
+  }
+}
+
+.about-me-caption {
+  margin-top: 20px;
+  color: #CFF2F1;
+}
+
+.techstacks {
+  color: #CFF2F1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-nolink {
+  background-color: teal;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* Make the container relative */
+.swap-on-hover {
+  position: relative;	
+	margin:  0 auto;
+	max-width: 300px;
+}
+
+/* Select the image and make it absolute to the container */
+.swap-on-hover img {
+  position: absolute;
+  top:0;
+  left:0;
+	overflow: hidden;
+	/* Sets the width and height for the images*/
+	width: 300px;
+	height: 300px;
+}
+
+/* 
+	We set z-index to be higher than the back image, so it's alwyas on the front.
+
+We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+*/
+.swap-on-hover .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+
+/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+.swap-on-hover:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+
+.about-me {
+  margin-bottom: 200px;
+}
+
+.projects {
+  margin-bottom: 500px;
+}
+
+.title-project {
+  margin-bottom: 80px;
+}
+
+.project-margin {
+  margin: 300px;
+}
+
+.contact {
+  margin-top: 500px;
+}
+
+.title-contact {
+  text-align: center;
+}
+
+.interested {
+  text-align: center;
+  font-size: 20px;
+  color: #CFF2F1;
+  margin: 40px;
+}
+
+.reach-me {
+  margin-top: 40px;
+  margin-bottom: 300px;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00FFFF;
+  text-align: center;
 }

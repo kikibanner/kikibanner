@@ -1,0 +1,14 @@
+@supports (font-variation-settings: "wght" 700) {
+    .tombol {
+        color: #00FFFF;
+        border-radius: 50px;
+        border-color: #00FFFF;
+        font-weight: 100;
+        padding: 10px 30px;
+    }
+    
+    .tombol:hover {
+        color: #0A1E2F;
+        background-color: #00FFFF ;
+    }
+  }

@@ -1,0 +1,44 @@
+
+.main-nav {
+    width:100vh;    
+    height:45px;
+    position:fixed;
+    background:transparent;
+    -webkit-transform-origin: left top;
+    -webkit-transform:rotate(-90deg) translateX(-100%);
+    margin-left: 20px;
+  }
+  ul.nav li {    
+    margin-left:120px;
+    float:right;
+    height:100%;
+    line-height:45px;
+}
+
+.linkbar {
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.linkbar:hover {
+    text-decoration: none;
+    color: cyan;
+}
+
+.code { 
+    color: #00FFFF;
+}
+
+.bottomright {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.demo {
+    padding: 20px;
+    margin: 5px;
+}

@@ -1,0 +1,72 @@
+/* Select the image and make it absolute to the container */
+.hoverSwap img {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+      /* Sets the width and height for the images*/
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* 
+      We set z-index to be higher than the back image, so it's alwyas on the front.
+  
+  We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+  */
+  .hoverSwap .hoverSwapFront {
+    z-index: 2;
+    transition: opacity .5s linear;
+    cursor: pointer;
+  }
+  
+  /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+  .hoverSwap:hover > .hoverSwapFront{
+    opacity: 0;
+  }
+  
+  .about-me {
+    margin-bottom: 200px;
+  }
+  
+  .projects {
+    margin-bottom: 200px;
+  }
+
+  .left {
+    z-index: 9999;
+    position: absolute;
+    left: 10%;
+  }
+
+  .right {
+      z-index: 1;
+      position: relative;
+      margin-left: 550px;
+  }
+
+.description {
+    width: 550px;
+    background-color: #0D273D;
+    padding: 10px;
+    border-radius: 10px;
+    color: #CFF2F1;
+}
+
+.stacks {
+    font-family: 'Courier New', Courier, monospace;
+    color: #CFF2F1;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@supports (font-variation-settings: "wght" 700) {
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.container {
+    
+}
