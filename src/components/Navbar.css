@@ -42,10 +42,3 @@
     padding: 20px;
     margin: 5px;
 }
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .main-nav {
-      display: none;
-    }
-  }

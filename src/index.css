@@ -195,26 +195,3 @@ footer {
   color: #00FFFF;
   text-align: center;
 }
-
-
-.profilepic-col-big {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .hero {
-    padding-left: 30px;
-  }
-  .txt-hero-main {
-    font-size: 36px;
-    font-weight: 700;
-  }
-
-  .profilepic-col {
-    order: 1;
-  }
-  .about-col {
-    order: 2;
-  }
-}
