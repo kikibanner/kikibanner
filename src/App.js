@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
     {/* // Navbar */}
-    <Navbar />
+    <Navbar className='navbar'/>
 
     {/* // Header Hero */}
       <div className="hero vh-100 d-flex justify-content-center " >
@@ -58,7 +58,7 @@ function App() {
             </div>
           </div>
           <div className="row about-me-caption">
-            <div className="col-8">
+            <div className="about-col col-md-8 col-12">
               <div className="row">
                 <div className="col">
                   <p>Hi! I'm Rifki, from East Java, Indonesia.</p>
@@ -90,7 +90,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="profilepic-col col-md-4 col-12">
               <div className="swap-on-hover">
                 <img className="swap-on-hover__front-image" src={FotoDepan} alt=""/>
                 <img className="wap-on-hover__back-image" src={FotoBelakang} alt=""/>
